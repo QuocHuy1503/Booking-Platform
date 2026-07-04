@@ -1,0 +1,41 @@
+services:
+  user-db:
+    image: postgres:16-alpine
+    container_name: user-db
+    environment:
+      POSTGRES_DB: user_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5433:5432"
+    volumes:
+      - user-db-data:/var/lib/postgresql/data
+
+  property-db:
+    image: postgres:16-alpine
+    container_name: property-db
+    environment:
+      POSTGRES_DB: property_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5434:5432"
+    volumes:
+      - property-db-data:/var/lib/postgresql/data
+
+  booking-db:
+    image: postgres:16-alpine
+    container_name: booking-db
+    environment:
+      POSTGRES_DB: booking_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5435:5432"
+    volumes:
+      - booking-db-data:/var/lib/postgresql/data
+
+volumes:
+  user-db-data:
+  property-db-data:
+  booking-db-data:

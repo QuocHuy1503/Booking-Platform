@@ -1,4 +1,4 @@
-package com.bookingplatform.propertyservice.entity;
+package com.bookingplatform.userservice.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;

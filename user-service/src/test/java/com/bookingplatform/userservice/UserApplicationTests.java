@@ -1,4 +1,4 @@
-package com.bookingplatform.propertyservice;
+package com.bookingplatform.userservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

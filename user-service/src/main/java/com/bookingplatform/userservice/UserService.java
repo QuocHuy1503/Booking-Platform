@@ -1,4 +1,4 @@
-package com.bookingplatform.propertyservice;
+package com.bookingplatform.userservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
